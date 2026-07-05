@@ -134,11 +134,11 @@ export class UI extends Actor {
             const heartHealth = lives - index * 2;
 
             if (heartHealth >= 2) {
-                heart.src = './images/sprites/UI/fullheart.png';
+                heart.src = 'images/sprites/UI/fullheart.png';
             } else if (heartHealth === 1) {
-                heart.src = './images/sprites/UI/halfheart.png';
+                heart.src = 'images/sprites/UI/halfheart.png';
             } else {
-                heart.src = './images/sprites/UI/emptyheart.png';
+                heart.src = 'images/sprites/UI/emptyheart.png';
             }
 
             heart.style.width = '64px';
@@ -153,7 +153,7 @@ export class UI extends Actor {
 
         this.ammoRow.innerHTML = '';
         const ammoImg = document.createElement('img');
-        ammoImg.src = './images/sprites/UI/ammo.png';
+        ammoImg.src = 'images/sprites/UI/ammo.png';
         ammoImg.style.width = '26px';
         ammoImg.style.height = '26px';
         ammoImg.style.objectFit = 'contain';
