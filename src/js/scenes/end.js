@@ -39,7 +39,7 @@ export class EndScene extends Scene {
         this.add(scoreLabel);
 
         const restartMessage = new Label({
-            text: 'Press SPACE to Restart',
+            text: 'Press SPACE to go back to Start',
             pos: new Vector(centerX, 800),
             anchor: new Vector(0.5, 0.5),
             font: new Font({
