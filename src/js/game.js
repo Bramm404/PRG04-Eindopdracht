@@ -1,4 +1,4 @@
-import { Color, DisplayMode, Engine, BoundingBox } from "excalibur";
+import { Color, DisplayMode, Engine } from "excalibur";
 import { Resources, ResourceLoader } from "./resources.js";
 import { Level } from "./scenes/level1.js";
 import { EndScene } from "./scenes/end.js";
