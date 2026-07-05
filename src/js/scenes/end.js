@@ -5,6 +5,7 @@ export class EndScene extends Scene {
 
 
     onInitialize(engine) {
+        this.engine = engine;
         const centerX = engine.drawWidth / 2;
         const leftX = 40;
 
@@ -24,7 +25,7 @@ export class EndScene extends Scene {
         this.add(message);
 
         const scoreLabel = new Label({
-            text: `Score: ${this.engine?.finalScore ?? 0}`,
+            text: `Score: ${engine?.finalScore ?? 0}`,
             pos: new Vector(centerX, 330),
             anchor: new Vector(0.5, 0.5),
             font: new Font({

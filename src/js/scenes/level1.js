@@ -145,7 +145,7 @@ export class Level extends Scene {
     zombieKilled() {
         this.enemiesAlive--;
         if (this.enemiesAlive === 0) {
-            this.engine.clock.schedule(() => { this.nextWave() }, 1000)
+            this.engine.clock.schedule(() => { this.nextWave() }, 5000)
         }
     }
 
